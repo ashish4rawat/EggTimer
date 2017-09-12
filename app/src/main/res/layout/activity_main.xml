@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.techincalrj.eggtimer.MainActivity">
+
+    <SeekBar
+        android:id="@+id/ashishSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"/>
+
+    <ImageView
+        android:id="@+id/ashishImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@raw/egg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"/>
+
+    <Button
+        android:id="@+id/ashishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ashishImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp"
+        android:onClick="setTimer"
+        android:text="Go"/>
+
+    <TextView
+        android:id="@+id/ashishText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ashishButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"
+        android:text="0"
+        android:textSize="50sp"/>
+</RelativeLayout>
